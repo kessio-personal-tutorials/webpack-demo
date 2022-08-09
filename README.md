@@ -44,5 +44,11 @@ webpack.config.js
  - then run npm run build
  - image will appear on the browser
 
+ # Loading Fonts
+> So what about other assets like fonts? The Asset Modules will take any file you load through them and output it to your build directory. This means we can use them for any kind of file, including fonts. Let's update our webpack.config.js to handle font files:
+
+- Add the font modules on config.js file
+- Add some font files to your project:
+
 
 
