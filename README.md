@@ -10,3 +10,10 @@ One of the coolest webpack features is that you can also include any other type 
 
 - dist/index.html
 - webpack.config.js
+
+## Loading CSS
+In order to import a CSS file from within a JavaScript module, you need to install and add the style-loader and css-loader to your module configuration:
+
+``` npm install --save-dev style-loader css-loader```
+
+
