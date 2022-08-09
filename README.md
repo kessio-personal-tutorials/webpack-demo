@@ -68,11 +68,13 @@ webpack-demo
 - To bundle the lodash dependency with index.js, we'll need to install the library locally:
 
 
-``` npm install --save lodash```
+```
+npm install --save lodash
+```
 
 - When installing a package that will be bundled into your production bundle, you should use npm install --save. If you're installing a package for development purposes (e.g. a linter, testing libraries, etc.) then you should use npm install --save-dev. More information can be found in the npm documentation.
 
-## Using a Configuration
+Using a Configuration
 
 - As of version 4, webpack doesn't require any configuration, but most projects will need a more complex setup, which is why webpack supports a configuration file. This is much more efficient than having to manually type in a lot of commands in the terminal, so let's create one:
 
