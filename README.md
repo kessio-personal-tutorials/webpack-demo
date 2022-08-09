@@ -67,9 +67,9 @@ webpack-demo
 
 - To bundle the lodash dependency with index.js, we'll need to install the library locally:
 
-```
-npm install --save lodash
-```
+
+``` npm install --save lodash```
+
 - When installing a package that will be bundled into your production bundle, you should use npm install --save. If you're installing a package for development purposes (e.g. a linter, testing libraries, etc.) then you should use npm install --save-dev. More information can be found in the npm documentation.
 
 ## Using a Configuration
@@ -90,7 +90,6 @@ webpack-demo
 
 ```
 const path = require('path');
-
 module.exports = {
   entry: './src/index.js',
   output: {
