@@ -20,4 +20,10 @@ In order to import a CSS file from within a JavaScript module, you need to insta
 
 > The above order of loaders should be maintained: 'style-loader' comes first and followed by 'css-loader'. If this convention is not followed, webpack is likely to throw errors.
 
+> webpack uses a regular expression to determine which files it should look for and serve to a specific loader. In this case, any file that ends with .css will be served to the style-loader and the css-loader
+
+> This enables you to import './style.css' into the file that depends on that styling. Now, when that module is run, a <style> tag with the stringified css will be inserted into the <head> of your html file.
+
+Let's try it out by adding a new style.css file to our project and import it in our index.js:
+
 
