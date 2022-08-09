@@ -4,14 +4,12 @@
 
 ##Basic Setup
 > First let's create a directory, initialize npm, install webpack locally, and install the webpack-cli (the tool used to run webpack on the command line):
-
 ```
 
 mkdir webpack-demo
 cd webpack-demo
 npm init -y
 npm install webpack webpack-cli --save-dev
-
 ```
 > Now we'll create the following directory structure, files and their contents:
 
@@ -24,7 +22,6 @@ project
  |- index.html
  |- /src
    |- index.js
-
    ```
    > We also need to adjust our package.json file in order to make sure we mark our package as private, as well as removing the main entry. This is to prevent an accidental publish of your code.
 
@@ -47,7 +44,6 @@ project
      "webpack": "^5.38.1",
      "webpack-cli": "^4.7.2"
    }
-
    ```
 
    ## Creating a Bundle
@@ -64,7 +60,6 @@ webpack-demo
  |- index.html // remove it from here and put it in dist file
   |- /src
     |- index.js
-
     ```
 
 ### Tip
@@ -74,7 +69,6 @@ webpack-demo
 
 ```
 npm install --save lodash
-
 ```
 - When installing a package that will be bundled into your production bundle, you should use npm install --save. If you're installing a package for development purposes (e.g. a linter, testing libraries, etc.) then you should use npm install --save-dev. More information can be found in the npm documentation.
 
@@ -91,7 +85,6 @@ webpack-demo
     |- index.html
   |- /src
     |- index.js
-
 ```
 - webpack.config.js
 
