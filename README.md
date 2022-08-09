@@ -105,20 +105,18 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
   },
 };
-
 ```
 - Now, let's run the build again but instead using our new configuration file:
 
-```
-$ npx webpack --config webpack.config.js
 
-```
-### NPM Scripts
+``` $ npx webpack --config webpack.config.js ```
+
+ NPM Scripts
 - Given it's not particularly fun to run a local copy of webpack from the CLI, we can set up a little shortcut. Let's adjust our package.json by adding an npm script:
 
 package.json
-```
 
+```
  {
    "name": "webpack-demo",
    "version": "1.0.0",
@@ -139,8 +137,9 @@ package.json
      "lodash": "^4.17.20"
    }
  }
-
  ```
+
+ 
 
  - Now the npm run build command can be used in place of the npx command we used earlier. Note that within scripts we can reference locally installed npm packages by name the same way we did with npx. This convention is the standard in most npm-based projects because it allows all contributors to use the same set of common scripts.
 
